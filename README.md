@@ -117,8 +117,7 @@ pip install -r requirements.txt
 
 ## References
 
-1. Fang, F., & Oosterlee, C. W. (2009). *A novel pricing method for European options based on Fourier–cosine series expansions.* SIAM Journal on Scientific Computing.
-2. Ruijter, M. J., & Oosterlee, C. W. (2012). *Pricing early‐exercise and discrete barrier options by Fourier‐cosine series expansions.* Journal of Computational Finance.
+F.~Fang and C.~W.~Oosterlee, "Pricing Early‐Exercise and Discrete Barrier Options by Fourier‐Cosine Series Expansions," \emph{Numerische Mathematik}, 114(1):27–62, 2009.
 
 ---
 
