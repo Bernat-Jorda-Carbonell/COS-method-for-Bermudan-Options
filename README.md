@@ -25,18 +25,18 @@ This project demonstrates the COS method originally proposed by Fang & Oosterlee
 
 cos-bermudan-options/
 ├── csv/                     # Sample input/output data in CSV format
-├── dummy\_plot\_dir/          # Placeholder directory for pipeline testing
+├── dummy_plot_dir/          # Placeholder directory for pipeline testing
 ├── plots/                   # Generated figures (error vs. N, runtimes, etc.)
 ├── LICENSE                  # MIT license file
 ├── README.md                # Project overview and usage instructions
 ├── Report.pdf               # Detailed PDF report with derivations and results
-├── compare\_lsmc\_cos.py      # Script to compare LSMC against COS pricing
-├── cos\_bermudan.py          # CLI wrapper for Bermudan option pricing via COS
-├── cos\_bs.py                # COS implementation under the Black–Scholes model
-├── cos\_models.py            # Characteristic functions for BS & CGMY models
-├── cos\_utils.py             # Helper routines (coefficients, truncation, FFT setup)
+├── compare_lsmc_cos.py      # Script to compare LSMC against COS pricing
+├── cos_bermudan.py          # CLI wrapper for Bermudan option pricing via COS
+├── cos_bs.py                # COS implementation under the Black–Scholes model
+├── cos_models.py            # Characteristic functions for BS & CGMY models
+├── cos_utils.py             # Helper routines (coefficients, truncation, FFT setup)
 ├── lsmc.py                  # Least‐Squares Monte Carlo pricer for benchmark comparison
-└── run\_experiments.py       # Batch runner for convergence & timing experiments
+└── run_experiments.py       # Batch runner for convergence & timing experiments
 
 ```
 
