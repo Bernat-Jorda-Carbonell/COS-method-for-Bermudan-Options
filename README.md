@@ -117,7 +117,8 @@ pip install -r requirements.txt
 
 ## References
 
-F.~Fang and C.~W.~Oosterlee, "Pricing Early‐Exercise and Discrete Barrier Options by Fourier‐Cosine Series Expansions," \emph{Numerische Mathematik}, 114(1):27–62, 2009.
+F. Fang and C. W. Oosterlee, "Pricing Early-Exercise and Discrete Barrier Options by
+Fourier-Cosine Series Expansions," Numerische Mathematik, 114(1):27–62, 2009.
 
 ---
 
