@@ -17,7 +17,42 @@ This project demonstrates the COS method originally proposed by Fang & Oosterlee
   - Exponential convergence in series term count \(N\)  
   - \(\mathcal{O}(M N\log N)\) complexity (M = number of exercise dates)  
   - Highly parallelizable FFT core  
-  - American‐limit recovery via 4-point Richardson extrapolation  
+  - American‐limit recovery via 4-point Richardson extrapolation
+
+## Project Structure
+
+```
+
+cos-bermudan-options/
+├── csv/                     # Sample input/output data in CSV format
+├── dummy\_plot\_dir/          # Placeholder directory for pipeline testing
+├── plots/                   # Generated figures (error vs. N, runtimes, etc.)
+├── LICENSE                  # MIT license file
+├── README.md                # Project overview and usage instructions
+├── Report.pdf               # Detailed PDF report with derivations and results
+├── compare\_lsmc\_cos.py      # Script to compare LSMC against COS pricing
+├── cos\_bermudan.py          # CLI wrapper for Bermudan option pricing via COS
+├── cos\_bs.py                # COS implementation under the Black–Scholes model
+├── cos\_models.py            # Characteristic functions for BS & CGMY models
+├── cos\_utils.py             # Helper routines (coefficients, truncation, FFT setup)
+├── lsmc.py                  # Least‐Squares Monte Carlo pricer for benchmark comparison
+└── run\_experiments.py       # Batch runner for convergence & timing experiments
+
+```
+
+**Descriptions**  
+- **csv/**: Holds example CSV files for input parameters and output prices, so you can quickly rerun samples.  
+- **dummy_plot_dir/**: Used to verify your plotting pipeline without cluttering real results.  
+- **plots/**: Stores all generated plots (error decay, runtime vs. \(N\), convergence comparisons).  
+- **compare_lsmc_cos.py**: Automates side‐by‐side pricing of Bermudan options via LSMC and COS, outputting tables and charts.  
+- **cos_bermudan.py**: Entry‐point CLI script—call with flags like `--model bs` or `--model cgmy`, strike, maturity, etc.  
+- **cos_bs.py**: Pure‐Python COS algorithm under Black–Scholes; computes coefficients and FFT‐based induction.  
+- **cos_models.py**: Defines and exposes model-specific characteristic functions (BS, CGMY).  
+- **cos_utils.py**: Utility functions—grid setup, truncation bounds, weight calculations, FFT helpers.  
+- **lsmc.py**: Implements Longstaff–Schwartz least‐squares Monte Carlo for validation and benchmarks.  
+- **run_experiments.py**: Orchestrates full suites of experiments (varying \(N\), \(M\), model parameters), saving CSVs and plots.  
+- **Report.pdf**: Comprehensive write-up with mathematical derivations, tables, and error analysis.  
+
 
 ## Features
 
